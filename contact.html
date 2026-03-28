@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact form to get in touch for Flutter development gigs and projects.">
+    <title>Contact | Flutter Dev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">FlutterDev.</div>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" style="color: var(--primary-glow);">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container" style="padding-top: 10rem; min-height: 80vh;">
+        <section class="reveal active">
+            <h1 style="text-align: center; margin-bottom: 1rem;">Let's Build Something</h1>
+            <p style="text-align: center; color: var(--text-muted); max-width: 600px; margin: 0 auto 3rem;">Have a project in mind or just want to say hi? I'd love to hear from you. Fill out the form below and I'll get back to you soon.</p>
+
+            <div class="contact-wrapper">
+                <div class="card" style="padding: 3rem;">
+                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thanks for your message! This is a demo form.');">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-control" placeholder=" " required>
+                            <label for="name" class="form-label">Your Name</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-control" placeholder=" " required>
+                            <label for="email" class="form-label">Email Address</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" class="form-control" placeholder=" " required>
+                            <label for="subject" class="form-label">Subject</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" class="form-control" placeholder=" " required></textarea>
+                            <label for="message" class="form-label">Your Message</label>
+                        </div>
+                        
+                        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+                
+                <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 3rem;">
+                    <a href="#" style="color: var(--text-muted); font-size: 1.5rem; transition: var(--transition-smooth);" onmouseover="this.style.color='var(--primary-glow)'" onmouseout="this.style.color='var(--text-muted)'">GitHub</a>
+                    <a href="#" style="color: var(--text-muted); font-size: 1.5rem; transition: var(--transition-smooth);" onmouseover="this.style.color='var(--primary-glow)'" onmouseout="this.style.color='var(--text-muted)'">LinkedIn</a>
+                    <a href="#" style="color: var(--text-muted); font-size: 1.5rem; transition: var(--transition-smooth);" onmouseover="this.style.color='var(--primary-glow)'" onmouseout="this.style.color='var(--text-muted)'">Twitter</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 FlutterDev. Crafted with code and coffee.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
